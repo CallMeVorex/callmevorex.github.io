@@ -1,11 +1,13 @@
 body {
-background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: blur(5px) brightness(50%);
-    height: 100%;
-    width: 100%;
+  background-image: url("images/down7.gif")
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: cover;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  z-index: 1;
 
 }
 .image-title {
