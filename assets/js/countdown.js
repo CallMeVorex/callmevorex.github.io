@@ -7,21 +7,19 @@ function wait(ms) {
  
 // Set the date we're counting down to
  
-var countDownDate = new Date("Aug 26, 2018 00:00:00 EDT").getTime();
- 
-var times = ["Aug 27, 2018 23:51:16 EDT", "Aug 28, 2018 01:34:06 EDT", "Aug 28, 2018 03:16:58 EDT", "Aug 28, 2018 04:59:49 EDT", "Aug 28, 2018 06:42:41 EDT", "Aug 28, 2018 08:25:32 EDT", "Aug 28, 2018 10:08:24 EDT", "Aug 28, 2018 11:51:15 EDT", "Aug 28, 2018 13:34:07 EDT", "Aug 28, 2018 15:16:58 EDT", "Aug 28, 2018 16:59:50 EDT", "Aug 28, 2018 18:42:41 EDT", "Aug 28, 2018 20:25:33 EDT", "Aug 28, 2018 22:08:24 EDT", "Aug 28, 2018 23:51:16 EDT"]
-var index = -1
+var countDownDate = new Date("Sep 2, 2018 07:25:00 EDT")
  
 // Get todays date and time
 var now = new Date().getTime();
+      
+var minutes = 25
+var seconds = 49.75
    
 // Find the distance between now and the count down date
-var distance = countDownDate - now;
- 
+var distance = countDownDate.getTime() - now;
 while (distance < 0) {
-    index += 1
- 
-    countDownDate = new Date(times[index]).getTime();
+    countDownDate.setSeconds(countDownDate.getSeconds() + minutes*60+seconds)
+    console.log("TEST")
  
     distance = countDownDate - now;
 }
@@ -41,7 +39,7 @@ var x = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
    
     // Output the result in an element with id="demo"
-    document.getElementById("countdown").innerHTML = hours + "h "
+    document.getElementById("countdown").innerHTML = "Printing Rune #2! Possible Finish Time: " + hours + "h "
     + minutes + "m " + seconds + "s ";
  
     console.log(distance)
@@ -50,7 +48,6 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "Cube Time!";
     }
     if (distance < -19000) {
-        index += 1
-    countDownDate = new Date(times[index]).getTime();
+    countDownDate.setSeconds(countDownDate.getSeconds() + minutes*60+seconds);
     }
 }, 1000);
