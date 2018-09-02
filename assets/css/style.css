@@ -1,1 +1,65 @@
+body {
+    border-top-left-radius: 50% 20px;
+    border-top-right-radius: 50% 20px;
+	background-image: url("images/down7.gif");
+	background-image: cover;
 
+}
+.image-title {
+	color: white;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+    border-radius: 100%;
+    width: 9em;
+}
+a { 
+    color: inherit; 
+}
+.title {
+	color: white;	
+	filter: drop-shadow(3px 3px 0 rgba(0, 0, 0, 0.4));
+    font-size: 30px;
+    letter-spacing: 1px;
+	margin-right: 130px;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: underline;
+}
+
+.nextmove {
+	color: white;	
+	filter: drop-shadow(3px 3px 0 rgba(0, 0, 0, 0.4));
+    font-size: 30px;
+    letter-spacing: 1px;
+	margin-top: -10px;
+	font-weight: normal;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: italic;
+}
+.undertitle {
+	color: white;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif;
+	filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.4));
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.createdby {
+	color: white;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.nextmove {
+	color: white;
+    font-size: 20px;
+	filter: drop-shadow(3px 3px 0 rgba(0, 0, 0, 0.4));
+    letter-spacing: 1px;
+	font-family: 'Montserrat', sans-serif;
+}
