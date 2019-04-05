@@ -1,0 +1,166 @@
+html,body {
+	height: 100%;
+	width: 100%
+}
+
+body {
+    margin:auto;
+    background-size: 100%;
+    position:relative;
+    font-family: sans-serif;
+    background-image: url("../images/background.jpg");
+    background-repeat: repeat;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-color: black;
+    text-decoration: none;
+}
+
+li {
+    background-color: rgba(255,255,255,.5);
+    border-radius: 20px;
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+li a:hover:not(.active) {
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    transition: 1s;
+}
+
+.btn:hover {
+    opacity: 1
+}
+
+.active {
+    background-color: #0da4c6;
+}
+
+.dropdown {
+  margin-top: 90px;
+  margin-right: 30px;
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 10px 0px;
+  background-color: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  border-radius: 20px;
+  position: fixed;
+  background-color: rgba(255,255,255,.5);
+  min-width: 140px;
+  drop-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    transition: 1s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.zoom {
+  padding: 50px;
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+.homeTitle {
+    text-align: center;
+    text-decoration:  bold;
+    font-size: 30px
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    align: center;
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: 175px;
+    margin-right: 210;
+    height: 30px; 
+}
+
+.calendar {
+    margin-top: 15px;
+}
+
+.caption {
+    font-size: 30px;
+    display: block;
+}
+
+.homeTours {
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 200px;
+    font-size: 25px;
+    float: left;
+}
+
+.homeStore {
+    text-align: right;
+    margin-top: 100px;
+    margin-right: 200px;
+    margin-bottom: 1000px;
+    font-size: 25px;
+    float: right;
+}
+
+.homeToursImg {
+    margin-left: 500px;
+}
